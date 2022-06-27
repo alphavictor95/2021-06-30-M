@@ -39,6 +39,7 @@ public class FXMLController {
     @FXML
     void doContaArchi(ActionEvent event) {
 
+    	
     }
 
     @FXML
@@ -57,6 +58,8 @@ public class FXMLController {
 
 	public void setModel(Model model) {
 		this.model = model ;
+		String msg = model.creaGrafo();
+		txtResult.appendText(msg);
 		
 	}
 }
